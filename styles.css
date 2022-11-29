@@ -1,0 +1,698 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'titillium web', sans-serif;
+    background-color: black;
+}
+
+  /* HAMBURGER */
+  
+  #menu {
+    z-index: 2;
+    width: 100%;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 80%;
+    background-color: black;
+    display: block;
+    border: 1px solid rgb(214, 190, 71);
+    border-radius: 5px;
+    transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    margin-top: .05rem;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    width: 100%;
+    transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    display: none;
+    text-align: center;
+  }
+  
+  .nav ul {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 1rem 0;
+  }
+  
+  .nav li a {
+    color: rgb(214, 190, 71);
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover, .nav li a:active {
+    color: grey;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background-color: black;
+    transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: rgb(214, 190, 71);
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 200%;
+    height: 150vh;
+    /* transform: translate(-60%,-30%); */
+  }
+
+  /* /HAMBURGER */
+
+  /* DESKTOP MENU */
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .innerMenu {
+    display: none;
+  }
+
+  /* DESKTOP MENU */
+
+  /* LOGO */
+
+  .logo {
+    width: 95%;
+    height: 12vh;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    position: absolute;
+    top: 0.5rem;
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+
+  /* /LOGO */
+
+  /* OPENING IMAGE */
+
+  .openingImage {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100vh;
+
+    background: url(happyCouples.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -webkit-background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h2Container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .openingImage h2 {
+    width: 90%;
+    max-width: 500px;
+    font-family: 'Charm', sans-serif;
+
+   text-align: center;
+   background-color: black;
+   color: rgb(214, 190, 71);
+
+   padding: 1rem;
+  }
+
+  /* /OPENING IMAGE */
+
+ /* HEADING */
+
+  .headingBanner {
+    width: 100%;
+    height: 15vh;
+  }
+
+  .headingBanner h1 {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: rgb(214, 190, 71);
+    font-family: 'Petit Formal Script', cursive;
+  }
+
+  /* HEADING */
+
+  /* OPENING STATEMENT */
+
+  .openingStatement {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    color: rgba(99, 96, 96, 0.712);
+  }
+
+ 
+  /* OPENING STATEMENT */
+
+  /* Heading/ Enhance  */
+
+  .headingPara {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
+    color: rgb(214, 190, 71);
+  }
+
+  .hrRule {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Heading/ Enhance  */
+
+
+  /* Shop Heading */
+
+  .catorgoriesHeading h3 {
+    text-align: center;
+    color: rgb(214, 190, 71);
+    font-weight: 700;
+  }
+
+  .catorgoriesHeading a {
+    color: white;
+    transition: all 1s ease;
+  }
+
+  .catorgoriesHeading a:hover {
+    color: blue;
+  }
+
+  span {
+    font-weight: 500;
+  }
+
+  .catorgoriesHeading p {
+    text-align: center;
+    color: rgb(214, 190, 71);
+  }
+
+  /* Shop Heading */
+
+  /* Searchbar */
+ 
+  .searchContainer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchForm {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+  }
+
+  .searchbar {
+    width: 60%;
+    max-width: 400px;
+    height: 5vh;
+
+    border-radius: 20px;
+
+    font-size: 1rem;
+    text-indent: .5rem;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: .025rem;
+  }
+
+  .searchBtn {
+    position: relative;
+    left: -1.5rem;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  /* Searchbar */
+
+  /* BIG BUY ----- */
+
+  .specialWrapper {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+    
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .specialWrapper h2 {
+    margin: 1.5rem;
+    color:rgb(214, 190, 71);
+    text-align: center;
+  }
+
+  .specialCard {
+    width: 80%;
+    max-width: 300px;
+    height: fit-content;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: .8rem;
+
+    border: 10px solid;
+    border-image: linear-gradient( 90deg, black, orange) 10;
+    border-radius: 20px;
+
+    text-align: center;
+  }
+
+  .specialCard p {
+    color: white;
+  }
+
+  .specialCard img {
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+
+  #fireplace-2 {
+    width: 70%;
+  }
+
+  .specialCard h4 {
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+
+    color: white;
+    margin: 1rem;
+  }
+
+  .specialCard a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .specialCard a:hover {
+    color: rgba(99, 96, 96, 0.712);
+  }
+
+  .specialSave {
+    margin: 1rem;
+  }
+
+  .specialSave a {
+      text-decoration: none;
+      color: white;
+  }
+
+
+  /* BIG BUY ----- */
+  
+  /* Main Content */
+
+  .wrapper {
+    width: 100%;
+    max-width: 1100px;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 140px;
+    height: 320px;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+
+    box-shadow: 0 0 25px 0 skyblue;
+    transition: 0.3s;
+
+    text-align: center;
+    position: relative;
+
+    /* border-radius: 20px; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+  }
+
+  .card h4 {
+    margin: .5rem;
+  }
+
+  .card a {
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+  }
+
+  .card a:hover, .card a:active {
+    color: rgb(214, 190, 71);
+  }
+
+  .card img {
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .save {
+    width: 80%;
+
+    position: relative;
+    top: -1rem;
+  }
+
+  .save a {
+    text-decoration: none;
+    color: black;
+
+    font-weight: 300;
+  }
+
+  /* MAIN CONTENT */
+
+  /* See More Content */
+
+  .seeMore {
+    width: 100%;
+    height: fit-content;
+
+  }
+
+  .seeMoreWrapper {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .seeMoreWrapper img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .seeMoreWrapper p {
+    margin: 1rem 0;
+    text-align: center;
+
+    font-size: 1.2rem;
+    color: rgb(214, 190, 71);
+  }
+
+  .seeMoreWrapper a {
+    color: white;
+  }
+
+  .seeMoreWrapper a:hover {
+    color: blue;
+  }
+
+  /* See More Content */
+
+  /* PRIME */
+
+  .bigWrapper {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+    
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .primePara {
+    font-size: 1.2rem;
+
+    text-align: center;
+
+    margin: 1rem;
+    margin-top: 2rem;
+
+    color: rgba(99, 96, 96, 0.712);
+  }
+
+  /* PRIME */ 
+
+   /* TODAYS DEALS */
+
+   .dealsCard {
+    box-shadow: 0 0 25px lightblue;
+  }
+
+  /* TODAYS DEALS */
+
+  /* BACK TO TOP */
+
+  .backToTop {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+
+  /* END STATEMENT AND FOOTER */
+
+
+ /* LOOKING FOR */
+
+.looking {
+  margin-top: 5rem;
+
+  width: 100%;
+  height: 25vh;
+
+}
+
+.looking h3, .looking p {
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
+  color: rgb(214, 190, 71);
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: fit-content;
+
+  background-color: black;
+}
+
+.innerFooter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three';
+}
+
+.one {
+display: grid;
+justify-content: center;
+align-items: center;
+}
+
+.one img {
+  width: 100px;
+}
+
+.two {
+display: grid;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: rgb(214, 190, 71);
+}
+
+.two ul {
+  list-style-type: none;
+}
+
+.two ul li {
+  margin: .5rem;
+  transition: all 1s ease;
+}
+
+.two ul li a {
+  text-decoration: none;
+  color: white;
+
+  transform: .4s;
+}
+
+.two ul li:hover {
+  transform: rotate(360deg);
+}
+
+.three {
+display: grid;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: rgb(214, 190, 71);
+
+}
+
+.three a {
+  color: white;
+  transition: all 1s ease;
+}
+
+.three a:hover {
+  color: blue;
+}
+
+.two ul li a:hover {
+  text-decoration: underline;
+  transform: rotateX(10deg);
+}
